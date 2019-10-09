@@ -369,29 +369,79 @@ Una consecuencia directa del PEF es que \textit{la luz debiese ser deflectada po
 \end{figure}
 Tal como en este caso simple, relacionado con la trayectoria de la luz en un campo gravitacional, el PEF permite determinar c'omo se comporta cualquier sistema f'isico en presencia de un campo gravitacional no nulo (en una regi'on suficientemente peque\~na), ya que es (o debe ser, de acuerdo a este principio) exactamente lo mismo que ocurre cuando el sistema se describe desde un SR que acelera respecto a uno (localmente) inercial. De hecho, el PEF \textit{unifica} localmente (los efectos de) la gravitaci'on con (los de) la aceleraci'on respecto a SRLI's, puesto que son f'isicamente indistinguibles. En este sentido en la teor'ia de gravitaci'on de Einstein la gravedad ``es'' aceleraci'on respecto a SLRI's: el hecho que en una regi'on del espacio se experimente un campo gravitacional respecto a un SR es simplemente una consecuencia de que ese SR acelera respecto a los SRLI's que cubren esa regi'on. Note que estas consideraciones son puramente ``cinem'aticas'' en el sentido que no permiten por si solas determinar la distribuci'on, orientaci'on y din'amica de los SRLI's (exactamente c'omo y hacia donde ``caen'' cada uno de estos SRLI's), 'este es precisamente el rol de las \textbf{ecuaciones de campo de la teor'ia}, que discutiremos en el cap'itulo \ref{capTEG}. No obstante, el PEF determina la forma en que un sistema f'isico responde a un campo gravitacional dado, tal como discutiremos a continuaci'on, ahora en el contexto relativista.
 
-\subsection{Desv'io de la luz*}
+\subsection{Desvío de la luz\times  }
+
+Consideremos ahora un rayo de luz que se emite en paralelo a la superficie terrestre. Para un observador en un sistema de referencia $K'$ que se mueve en conjunto con el rayo se tiene que la variación del tiempo y altura son dados por 
 \begin{equation}
 \Delta t'=\frac{L}{c}, \qquad \Delta y' = 0
 \end{equation}
-\begin{equation}
-\Delta y = \frac{1}{2} g (\Delta t)^2 = \frac{1}{2} g (\Delta t')^2 = \frac{gL^2}{2c^2}
-\end{equation}
-Si $L\approx 1{\,\rm km} = 10^3{\,\rm m}$, y usando $g\approx 9.8{\,\rm m/s^2}$ entonces
+
+Por otro lado, para un observador $K$ en reposo con respecto a la superficie tendrá las siguientes ecuaciones
+\begin{align}
+&\Delta t= \Delta t' = \frac{L}{c}
+\\
+\Delta y= \frac{1}{2} g& (\Delta t)^2 = \frac{1}{2} g (\Delta t')^2 = \frac{gL^2}{2c^2}
+\end{align}
+
+Esto significa que para el \textbf{SR} $K$ el rayo se desvio con respecto a la normal.
+\par
+Si consideramos $L\approx 1{\,\rm km} = 10^3{\,\rm m}$, y usando $g\approx 9.8{\,\rm m/s^2}$, entonces la desviación con respecto al eje $y$ es aproximadamente
 \begin{equation}
 \Delta y \approx 5.4\times 10^{-11}{\,\rm m}
+\end{equation}
+
+El ángulo de desvío $\theta$ se relaciona con la distancia recorrida $L$ y la variación $\Delta y$ de la siguiente forma 
+\begin{equation}
+    \sin(\theta)=\frac{\Delta y}{L}
+\end{equation}
+
+Multiplicando por $L$ , tenemos que un elemento diferencial de $\Delta y$ es dado por
+\begin{align}
+    \sin(\theta)dL+L\cos(\theta)d\theta=d(\Delta y)
+\end{align}
+
+como $\Delta y/L \ll 1$, tenemos $\sin(\theta) \approx \theta$ y $\cos(\theta) \approx 0$, por lo que 
+
+\begin{equation}
+\theta dL \approx d(\Delta y)
 \end{equation}
 \begin{equation}
 \theta \approx \frac{d(\Delta y)}{dL} \approx \frac{gL}{c^2} \approx \times 10^{-13}{\,\rm rad}.
 \end{equation}
 
-'Angulo total de desv'io
+
+
+Luego, el \textbf{ángulo total de desvío} corresponde a la integral sobre todos los diferenciales de ángulo $\theta$
 \begin{equation}
-\Theta = \int d\theta \approx \int \frac{g}{c^2}dL = \frac{1}{2c^2}\int g r d\varphi
+\Theta = \int d\theta \approx \int \frac{g}{c^2}dL = \frac{1}{c^2}\int g r d\varphi
 \end{equation}
-Si $g\approx GM/r^2$ y $r(\varphi)\approx D/\sen\varphi$, $\varphi\in [0,\pi]$ (l'inea recta), entonces
+Si consideramos $g\approx GM/r^2$ y $r(\varphi)\approx r_{0}\sec(\varphi)$, $\varphi\in [-\pi/2,\pi/2]$ (línea recta), entonces
 \begin{equation}
-\Theta \approx \frac{GM}{c^2D}\int_0^\pi\sen\varphi\,d\varphi = \frac{2GM}{c^2D}.
+\Theta \approx \frac{GM}{c^2r_{0}}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\cos(\varphi)d\varphi = \frac{2GM}{c^2r_{0}}.
 \end{equation}
+
+Este resultado es igual a la mitad del valor del ángulo real.
+
+\subsubsection{Ejemplo: Desvío de la luz de Alfa Centauri}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.55]{desvluz1.jpg}
+    \caption{Ejemplo de desvío de la luz de una estrella debido a la presencia del sol.}
+    \label{DensidadRelativista}
+\end{figure}
+Alfa Centauri está aproximadamente a $4.37$ años luz de la Tierra. Su trayectoria se ve afectada por presencia del Sol, el cual tiene una masa de $1.989\times  10^{30}Kg$, una aceleración en su superficie de $274m/s^2$ y tiene un radio de $695510Km$. En este caso, la distancia que se desvía la luz es aproximadamente
+\begin{equation}
+\Delta y \approx 275\times  10^{3} \text{años luz}
+\end{equation}
+
+Esto es aproximadamente un $6.65\times  10^{-7}\%$ de la distancia total que recorrería en línea recta.
+\par
+Por otro lado, el ángulo de desvíación total es aproximadamente 
+\begin{equation}
+    \Theta=\frac{2GM_{\odot}}{c^2R_{\odot}}=4.241\times  10^{-6} \text{rad.}
+\end{equation}
+
+esto es equivalente a un ángulo de desvío de $4.86\times  10^{-4}[^{o}]$.
 
 \subsection{Redshift gravitacional*}
  
